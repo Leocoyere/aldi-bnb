@@ -1,3 +1,3 @@
-# Cours WordPress
+# ALDI BNB
 
-j'ai préparé un Dump SQL pour que vous puissiez avoir une database fonctionnelle dès le lancement de la stack
+Projet reprenant les fonctionnalités de AirBNB réalisé dans le cadre d'un projet scolaire. Le but étant de découvrir et s'approprier le CMS Wordpress.
