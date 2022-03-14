@@ -3,4 +3,653 @@ Theme Name: Mon Theme
 Description: Un thème de merde c'est incroyable
 Author: John Bob
 Version: 1.0.0
- */
+*/
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Shippori Antique B1', sans-serif;
+	font-size: 16px;
+}
+
+img {
+	display: block;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	color: inherit;
+}
+
+.page-wrapper {
+	width: 100%;
+	max-width: 920px;
+	margin: 150px auto;
+}
+
+.wrapper-margin {
+	max-width: 920px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	max-width: none;
+}
+
+.form-page {
+	display: flex;
+	justify-content: space-between;
+	min-height: 100vh;
+}
+
+.form-image {
+	width: 40%;
+	background-color: #FEDAC9;
+	transition: all ease-out .5s;
+}
+
+.form-container {
+	width: 100%;
+	max-width: 600px;
+	margin: auto;
+}
+
+.form {
+	width: 100%;
+	height: 100%;
+}
+
+.input-container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 260px;
+}
+
+.input-container label {
+	margin-bottom: 5px;
+}
+
+.form-row {
+	display: flex;
+	justify-content: space-between;
+	margin: 50px 0;
+	gap: 50px;
+}
+
+.buttons-container {
+	margin: 50px auto;
+	display: flex;
+	gap: 20px;
+	justify-content: flex-end;
+}
+
+.form-line {
+	width: 100%;
+	height: 2px;
+	background-color: rgba(0, 0, 0, .2);
+	margin: 50px auto;
+}
+
+.form-title .subtitle {
+	display: block;
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, .2);
+	font-size: 0.625em;
+}
+
+.form-title .title {
+	font-family: "Passion One", sans-serif;
+	font-size: 2.250em;
+}
+
+.form-input {
+	height: 40px;
+	border-radius: 20px;
+	border: solid 2px rgba(0, 0, 0, .2);
+	padding: 0 10px;
+}
+
+.input-container textarea {
+	width: 100%;
+	border-radius: 20px;
+	border: solid 2px rgba(0, 0, 0, .2);
+	resize: none;
+	padding: 0 10px;
+}
+
+.form-column {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 260px;
+}
+
+.tall {
+	height: 159px;
+}
+
+.input-container.large {
+	width: 100%;
+	max-width: none;
+}
+
+.form-button {
+	padding: 7px 20px;
+	text-transform: uppercase;
+	border: solid #000 2px;
+	background-color: transparent;
+	border-radius: 10px;
+}
+
+.form-button.primary {
+	background-color: #000;
+	color: #FFF;
+}
+
+.form-block {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 50px 0;
+}
+
+.type-file .form-input {
+	opacity: 0;
+	font-size: 0;
+}
+
+.type-file::after {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 29px;
+	left: 0;
+	width: 100%;
+	height: calc(100% - 29px);
+	border-radius: 20px;
+	border: solid 2px rgba(0, 0, 0, .2);
+}
+
+.type-file::before {
+	content: url(http://localhost:2345/wp-content/uploads/2022/03/upload.svg);
+	position: absolute;
+	top: calc(50% + 29px);
+	transform: translateY(-100%) translateX(-50%);
+	left: 50%;
+	width: 20%;
+	height: 25%;
+}
+
+.icon-container {
+	display: flex;
+	align-items: center;
+	height: 50px;
+	margin: 0 50px 50px 0;
+}
+
+.icon-container img {
+	height: 100%;
+	margin-left: 20px;
+}
+
+.post-title {
+	font-family: 'Passion One', sans-serif;
+	font-size: 3.000em;
+}
+
+.post-subtitle {
+	font-family: 'Passion One', sans-serif;
+	font-size: 2.250em;
+	margin-bottom: 30px;
+}
+
+.post-price {
+	font-size: 1.500em;
+}
+
+.data-container {
+	margin: 50px auto;
+}
+
+.wp-post-image {
+	width: 100%;
+}
+
+.image-container {
+	margin: 50px 0;
+}
+
+.post-content {
+
+}
+
+.user-container {
+	display: flex;
+	padding: 20px;
+}
+
+.user-fullname {
+	font-size: 1.500em;
+	margin: 0;
+}
+
+.user-username {
+	font-size: 0.875em;
+	color: rgba(0, 0, 0, .2);
+}
+
+.user-description {
+	margin-top: 20px;
+}
+
+.user-image {
+	margin-right: 20px;
+}
+
+.user-image img {
+	width: 100px;
+	height: 100px;
+	background-color: rgba(0, 0, 0, .2);
+	border-radius: 100%;
+}
+
+.comment {
+	display: block;
+	max-width: 420px;
+	margin: 0 auto 20px auto;
+}
+
+.comment .user-image img {
+	width: 70px;
+	height: 70px;
+}
+
+.comment .user-name {
+	font-size: 0.750em;
+}
+
+.comment .user-description {
+	margin: auto;
+}
+
+.comments-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.user-head {
+	display: flex;
+	align-items: center;
+}
+
+.posts-overview-container {
+	max-width: 920px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.overview-container {
+	display: block;
+	color: #000;
+	text-decoration: none;
+	width: 290px;
+	height: 360px;
+	overflow: hidden;
+}
+
+.overview-image {
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-top: 100%;
+	overflow: hidden;
+}
+
+.overview-image img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	object-fit: cover;
+}
+
+.overview-infos {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	font-size: 0.875em;
+}
+
+.overview-title {
+	font-family: 'Passion One', sans-serif;
+	font-size: 1.500em;
+	overflow: hidden; 
+	text-overflow: ellipsis;
+}
+
+.overview-location {
+	text-transform: uppercase;
+}
+
+.overview-price {
+
+}
+
+.overview-data {
+	padding: 10px 0;
+	overflow: hidden; 
+	white-space: nowrap;
+}
+
+.infos-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.info {
+	display: flex;
+	text-transform: uppercase;
+	margin-right: 30px;
+	margin-bottom: 10px;
+}
+
+.info-icon {
+	height: 20px;
+	margin-right: 10px;
+}
+
+.slider-background {
+	position: relative;
+	width: 100%;
+	height: 90vh;
+	background-color: #FEDAC9;
+}
+
+.slider-title {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	right: -100%;
+	transform: translateY(-50%) translateX(-100%);
+	max-width: 450px;
+	font-family: 'Passion One', sans-serif;
+	font-size: 4.000em;
+	color: #FFF;
+	text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+}
+
+.slider-background .slider-container {
+	position: absolute;
+	bottom: 0;
+	left: calc((100% - 920px) / 2);
+	width: 100%;
+	max-width: 700px;
+	background-color: #FFF;
+}
+
+.slider-image {
+	width: 100%;
+	padding: 35px 35px 0 35px;
+}
+
+.houses-search {
+	margin-bottom: 150px;
+	width: calc(100% - ((100% - 920px) / 2));
+	margin-left: calc((100% - 920px) / 2);
+}
+
+.houses-search .slider-container{
+	display: flex;
+	width: 100%;
+	overflow-x: auto;
+	gap: 20px;
+}
+
+.house-item {
+	position: relative;
+	height: 400px;
+	min-width: 300px;
+}
+
+.house-image {
+	height: 100%;
+}
+
+.house-button {
+	display: block;
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	width: 170px;
+	transform: translateX(-50%);
+	font-family: "Passion One", sans-serif;
+	text-transform: capitalize;
+	font-size: 1.875em;
+	border: solid 3px #FFF;
+	text-align: center;
+	border-radius: 40px;
+	color: #fff;
+	background-color: transparent;
+	transition: background-color ease-out .2s;
+}
+
+.house-button:hover {
+	color: #000;
+	mix-blend-mode: screen;
+	background-color: #fff;
+}
+
+.home-title {
+	font-family: "Passion One", sans-serif;
+	font-size: 3.000em;
+	margin-bottom: 50px;
+	margin-top: 150px;
+}
+
+.top-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+	width: 100%;
+	max-width: 1080px;
+	margin: auto;
+	margin-bottom: 150px;
+}
+
+.grid-element {
+	position: relative;
+}
+
+.grid-element.large {
+	grid-area: auto / span 2;
+}
+
+.grid-element.tall {
+	grid-area: span 2 / auto;
+	height: 100%;
+}
+
+.grid-image {
+	height: 100%;
+}
+
+.grid-image img {
+	object-fit: cover;
+	height: 100%;
+}
+
+.info-pannel {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	width: 170px;
+	padding: 10px;
+	background-color: #FFF;
+}
+
+.info-pannel h3 {
+	text-transform: capitalize;
+	font-family: 'Passion One', sans-serif;
+	font-size: 1.500em;
+}
+
+.info-pannel span {
+	font-size: 0.750em;
+}
+
+.info-header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.info-icon {
+	width: 20px;
+	height: 20px;
+}
+
+.edit-container {
+	display: flex;
+	padding: 20px;
+	font-size: .8em;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1300px) {
+	.form-image {
+		width: 30%;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.slider-background .slider-container {
+		max-width: none;
+		left: 0;
+	}
+
+	.slider-image {
+		height: 100vh;
+		padding: 0;
+	}
+
+	.slider-image img {
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.slider-title {
+		right: 10vw;
+		left: 10vw;
+		transform: translateY(-50%);
+		max-width: calc(100% - 20vw);
+	}
+
+	.page-wrapper {
+		width: auto;
+		margin-left: 7vw;
+		margin-right: 7vw;
+	}
+
+	.form-image {
+		width: 0;
+	}
+
+	.home .wrapper-margin {
+		margin-left: 10vw;
+		margin-right: 10vw;
+	}
+
+	.houses-search {
+		margin-left: 0;
+		width: 100%;
+	}
+
+	.top-grid {
+		grid-template-columns: 1fr;
+		grid-gap: 20px 0;
+	}
+
+	.grid-element.large {
+		grid-area: auto;
+	}
+	
+	.grid-element.tall {
+		grid-area: auto;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.comments-container {
+		display: flex;
+	}
+
+	.form-container {
+		max-width: none;
+		margin: auto 7vw;
+	}
+
+	.form-row {
+		gap: 10%;
+	}
+
+	.user-container.host {
+		max-width: 420px;
+		margin-left: auto;
+		margin-right: auto;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.user-container.host .user-image {
+		margin: 0;
+	}
+
+	.edit-container {
+		justify-content: center;
+	}
+
+}
+
+@media screen and (max-width: 500px) {
+	
+	.form-row {
+		flex-direction: column;
+		margin: 50px auto;
+		gap: 50px;
+	}
+	
+	.form-container {
+		margin: auto 10vw;
+	}
+
+	.form-column {
+		gap: 50px;
+		max-width: none;
+	}
+
+	.input-container {
+		max-width: none;
+	}
+}
